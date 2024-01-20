@@ -1,20 +1,31 @@
 import random
+import math
 
 valinta=int(input("tehtävä"))
+"""
+if valinta==0:
+    print("-"*100)
+    print("Joe")
+    print("-"*100)
 
 
+
+    print("-"*100)
+    print("Meikä poika asuu kuninkaan linnassa", int(3))
+    print("-"*100)
+"""
 if valinta==1:
     nimi=input("Mikä on sun nimi? :)")
     print("Moi",nimi)
 
 elif valinta==2:
     sade=int(input("Säde?"))
-    sade=sade*sade*3.14
+    sade=sade**2*math.pi
     print("Ympyrän säde on",sade)
 
 elif valinta==3:
-    kanta=int(input("kanta?"))
-    korkeus=int(input("korkeus?"))
+    kanta=float(input("kanta?"))
+    korkeus=float(input("korkeus?"))
     area=kanta*korkeus
     perimiter=kanta*2+korkeus*2
 
@@ -52,3 +63,5 @@ elif valinta==6:
     kol=str(random.randint(0,9))+str(random.randint(0,9))+str(random.randint(0,9))
     nel=str(random.randint(1,6))+str(random.randint(1,6))+str(random.randint(1,6))+str(random.randint(1,6))
     print(kol,nel)
+    #print(id(kol))
+
